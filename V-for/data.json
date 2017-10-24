@@ -15,7 +15,8 @@
       "name": "Apple Watch Band Milanese Loop",
       "seller": "MoKo",
       "isAvailable": true,
-      "isEligible": false
+      "isEligible": false,
+      "price": "16.98"
     }
   ],
   "saved": [
@@ -25,7 +26,8 @@
       "name": "Apple Watch Band Soft Silicone Replacement Sport Band for 38mm Apple Watch",
       "seller": "MoKo",
       "isAvailable": true,
-      "isEligible": true
+      "isEligible": true,
+      "price": "27.98"
     }
   ]
 }
