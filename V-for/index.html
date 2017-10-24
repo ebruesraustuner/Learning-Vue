@@ -9,7 +9,6 @@
   <script type="text/javascript" src="app.js"></script>
 </head>
 <body>
-  <body>
 <div id="app">
     <p v-if="isLoading">Looooading</p>
     <h2>Shopping Cart</h2>
@@ -29,11 +28,16 @@
       <a href="#"v-on:click="removeFromCart(index)">Delete</a>
       <a href="#"class="secondary" v-on:click="saveForLater(index)"> Save For Later</a>
           </div>
+          <p class="price">
+          ${{item.price}}
+          </p>
   	  	</div>
+        <div class="subtotal">
+       <b> Subtotal ({{cart.length}} items):</b> <span class="price">${{cartTotal}}</span>
+        </div>
     	</div>
 
       <h2>Saved For Later ( {{saved.length}} item)</h2>
-     
     <div class="cart">
         <div class="item" v-for="item in saved">
           <div class="image">
@@ -47,13 +51,11 @@
       <p class="status available" v-if="item.isAvailable"> In Stock</p>
       <p class="shipping" v-if="item.isEligible"> Eligible For free Shipping & Free  Returns</p>
       <a href="#"v-on:click="removeFromSavedList(index)">Delete</a>
-      <a href="#"class="secondary" v-on:click="moveToCart(index)"> Move to Cart</a>
+     <a href="#"class="secondary" v-on:click="moveToCart(index)"> Move to Cart</a>
           </div>
         </div>
       </div>
 
   </div> 
-</body>
-
 </body>
 </html>
